@@ -1,5 +1,5 @@
 #ignore __pycache__ folder
-global-exclude __pycache__
+global-exclude __pycache__/
 
 global-exclude emodel/
 
