@@ -1,10 +1,5 @@
-#ignore __pycache__ folder
-global-exclude __pycache__/*
+# Ignore the model folder and its contents
+/model/*
 
-global-exclude model/*
-
-# exclude everything
-global-exclude results/*
-
-# exception to the rule
-global-exception !resultq/.gitkeep 
+# Ignore all __pycache__ folders
+**/__pycache__/
