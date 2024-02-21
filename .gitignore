@@ -1,5 +1,8 @@
 # Ignore the model folder and its contents
 /model/*
 
+# Ignore all files inside the results folder
+/results/*
+
 # Ignore all __pycache__ folders
-**/__pycache__/
+__pycache__/
