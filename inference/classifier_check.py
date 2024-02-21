@@ -62,6 +62,8 @@ def main():
     result_img = classification(embedding, bbs, img)
 
     if args.save_dir:
+        if not os.path.isdir("results"):
+            os.mkdir("results")
         basename = os.path.basename(filename)
         name = basename.split('.')[0]
         ext = basename.split('.')[1]
