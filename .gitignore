@@ -1,4 +1,10 @@
 #ignore __pycache__ folder
 global-exclude __pycache__
-#ignore .pkl files
-global-exclude *.pkl
+
+global-exclude emodel/
+
+# exclude everything
+global-exclude results/*
+
+# exception to the rule
+global-exception !resultq/.gitkeep 

@@ -30,7 +30,7 @@ def recognise_faces(img, feature_extractor):
 
 
 def classification(embedding, bbs, img):
-    pkl = open('model\\clf.pkl', "rb")
+    pkl = open('model/clf.pkl', "rb")
     clf = pickle.load(pkl)
     i = 0
 
@@ -65,7 +65,7 @@ def main():
         basename = os.path.basename(filename)
         name = basename.split('.')[0]
         ext = basename.split('.')[1]
-        result_img.save('{}\{}_tested_image.{}'.format(
+        result_img.save('{}/{}_tested_image.{}'.format(
             args.save_dir, name, ext))
 
     result_img.show()

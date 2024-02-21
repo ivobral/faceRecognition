@@ -11,7 +11,7 @@ def draw_bb_on_img(bb, img, prediction, idx_to_class):
 
     text = "%s %.2f%%" % (
         idx_to_class[top_label], prediction[top_label] * 100)
-    text_size = font.getsize(text)
+    text_size = font.getbbox(text)
 
     # bounding box
     draw.rectangle(
